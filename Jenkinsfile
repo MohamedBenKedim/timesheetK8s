@@ -323,7 +323,6 @@ pipeline {
                         script {
                             dir('helloTerraformTest/terraform') {
                                 sh '''
-                                    terraform init
                                     terraform destroy -auto-approve
                                 '''
                             }
